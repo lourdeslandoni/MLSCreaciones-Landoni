@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap');
+
+/*Estilo para etiquetas generales*/
+
+* {
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    font-size: 85%;
+}
+
+h1,
+h2,
+h3 {
+    color: palevioletred;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: 10%;
+}
+
+.encabezado__box {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: rgb(238, 227, 230);
+    padding: 10px 10px;
+}
+
+.bg-nav{
+    background-color: white;
+    padding: 10px;
+}
+
+.bg-nav ul li{
+    margin-right: 20px;
+}
+
+.bg-nav ul li a{
+    font-size: 2rem;
+    color: rgb(243, 164, 162);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#nav1 :hover {
+    color: salmon;
+}
+
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer__image {
+    width: 150px;
+}
+.footer__icon {
+    width: 40px;
+    padding: 0px;
+}
+
+.sobreMi__article {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: dotted 6px rgb(238, 227, 230);
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.sobreMi__article--fotoMarian {
+    width: 400px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+article h2{
+    font-size: 2rem;
+    background-color: rgb(217, 182, 189);
+}
+
+article{
+    text-align: center;
+    font-size: 1.4rem;
+    width: 80vw;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+}

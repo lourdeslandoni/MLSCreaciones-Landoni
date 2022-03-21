@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap');
+
+/*Estilo para etiquetas generales*/
+
+* {
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    font-size: 85%;
+}
+
+h1,
+h2,
+h3 {
+    color: palevioletred;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+
+footer img {
+    width: 10%;
+}
+
+p {
+    text-align: center;
+    background-color: white);
+    color: dimgrey;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/*Clases para Header y Nav*/
+
+.encabezado__logoMarca {
+    width: 140px;
+}
+
+.encabezado__box {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: rgb(238, 227, 230);
+    padding: 10px 10px;
+}
+
+.imgNav {
+    width: 30px;
+}
+
+.botonera {
+    background-color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;        
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.botonera ul {
+    display: flex;
+    vertical-align: middle;
+
+}
+
+.botonera ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.botonera ul li a {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(241, 187, 186);
+    padding: 10px;
+}
+
+#nav1 :hover {
+    color: salmon;
+}
+
+/*Clases para page"FAQs y Contacto"*/
+
+/* .preguntasFrecuentes__article {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px auto;
+    border: dotted 6px rgb(31, 17, 20);
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.contacto {
+    display: flex;
+    margin-top: -20px;
+}
+
+.contacto__texto {
+    display: flex;
+    margin : 20px;
+    box-sizing: border-box;
+}
+
+article h3{
+padding-bottom: 20px;
+}
+
+.contacto__formulario {
+    margin: 20px;
+    padding-left: 20px;
+    color: ghostwhite;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: rgb(216, 194, 194);
+}
+
+.legend__format {
+    color: rgb(247, 141, 157);
+}
+
+.completar{
+    width: 200px;
+}
+
+/*Clases para footer*/
+
+/* .footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer div {
+    display: flex;
+    text-align: row;
+    margin-right: 90px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-right: 30px;
+}
+
+.footer h3 {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.footer__image {
+    width: 160px;
+    margin-left: 20px;
+}
+
+.footer__icon {
+    width: 30px;
+    margin-left: 20px;
+}
+
+/*Aplicando Grid para estructurar página*/
+
+/* .contenedor {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+        "header"
+        "nav"
+        "filtros"
+        "productos"
+        "aside"
+        "footer"; */
+}
+/* 
+#nav1 {
+    grid-area: nav;
+    height: 20vh;
+}
+
+#header {
+    grid-area: header;
+    height: 6vh;
+}
+
+#filtros {
+    grid-area: filtros;
+}
+
+#productos {
+    grid-area: productos;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+#footer {
+    grid-area: footer;
+} */
+
+/* @media (min-width: 768px){
+
+	.contenedor{
+		grid-template-columns: 30vw 70vw;
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas: 
+        "header header"
+        "nav nav"
+        "filtros filtros"
+        "productos productos"
+        "aside aside"
+        "footer footer";
+	}
+
+    .botonera ul li a {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    .sobreMi__article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    article h3{
+        padding-bottom: 20px;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;    
+    }
+   
+    .footer h3 {
+        color: black;
+    }
+    
+    .footer__image {
+        width: 100px;
+        margin-left: 20px;
+    }
+    
+    .footer__icon {
+        width: 30px;
+        margin-left: 20px;
+    } */
+
+    /* .contacto {
+        display: inline-block;
+    }
+
+    article h3 {
+        align-self: center;
+        margin-right: 30px;
+        font-size: 2rem;
+    }
+    
+    main h2 {
+        font-size: 2rem;
+    }
+
+    .galeria_disenios {
+    display: flex;
+    justify-content: center;
+    }
+
+    textarea{
+        display: flex;
+    }
+
+    .completar{
+        width: 200px;
+    }
+   }
+    
+ @media (min-width: 1024px){
+	.contenedor{
+		grid-template-columns: 20vw 60vw 20vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "filtros productos aside"
+        "footer footer footer";
+	}
+
+    .botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    .botonera ul li a {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .encabezado__logoMarca {
+        width: 140px;
+    }
+
+        main h2 {
+        padding-bottom: 20px;
+        }
+
+        .completar{
+            width: 300px;
+        }
+
+        .galeria {
+        display: flex;
+        flex-wrap: nowrap;
+        }
+       
+        .section_contacto {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .footer__image {
+        width: 140px;
+        margin-left: 20px;
+    }
+} 
