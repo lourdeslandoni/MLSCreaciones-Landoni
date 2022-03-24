@@ -1,451 +1,376 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap");
 
 /*Estilo para etiquetas generales*/
 
 * {
-    margin: 0;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
 }
 
 html {
-    font-size: 85%;
+  font-size: 85%;
 }
 
 h1,
 h2,
 h3 {
-    color: palevioletred;
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
+  color: palevioletred;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 1rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 0.8rem;
 }
-
 
 body {
-    background-image: url(../img/background.png);
-    background-attachment: fixed;
-    box-sizing: border-box;
+  background-image: url(../img/background.png);
+  background-attachment: fixed;
+  box-sizing: border-box;
 }
 
-
-footer img {
-    width: 10%;
+nav img {
+  width: 30%;
 }
 
-p {
-    text-align: center;
-    background-color: white);
-    color: dimgrey;
-    font-size: 1.5rem;
-    line-height: 2rem;
+footer h3 {
+  color: salmon;
+  font-size: 0.8rem;
 }
 
-/*Clases para Header y Nav*/
-
-.encabezado__logoMarca {
-    width: 140px;
+li {
+  list-style: none;
 }
+
+ul {
+  padding-left: 0;
+}
+
+figure img {
+  width: 70%;
+}
+/*Estilo para encabezado y navs*/
 
 .encabezado__box {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    box-sizing: border-box;
-    background-color: rgb(238, 227, 230);
-    padding: 10px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: rgb(238, 227, 230);
+  padding: 10px 10px;
+}
+
+.bg-nav {
+  background-color: white;
+  padding: 10px;
+}
+
+.bg-nav ul li {
+  margin-right: 20px;
+  background-color: white;
+}
+
+.bg-nav ul li a {
+  font-size: 1rem;
+  color: rgb(243, 164, 162);
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: antiquewhite;
 }
 
 .imgNav {
-    width: 30px;
-}
-
-.botonera {
-    background-color: white;
-    position: sticky;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;        
-    }
-}
-
-.text-center {
-    text-align: center;
-}
-
-.botonera ul {
-    display: flex;
-    vertical-align: middle;
-
-}
-
-.botonera ul li {
-    list-style: none;
-    margin-right: 10px;
-}
-
-.botonera ul li a {
-    font-size: 1.2rem;
-    font-weight: bolder;
-    text-decoration: none;
-    color: rgb(241, 187, 186);
-    padding: 10px;
+  width: 10%;
+  margin-bottom: 4px;
 }
 
 #nav1 :hover {
-    color: salmon;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    }
-
-/*Clases para page "Productos"*/
-
-main h2{
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-section {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-
-.galeria section {
-    margin: 10px;
-    display: flex;
-}
-
-.galeria figure {
-    text-align: center;
-}
-
-.galeria figure figcaption {
-    font-size: 2rem;
-    color: black;
-    padding: 10px 20px;
-    background-color: rgb(217, 182, 189);
-    display: flex;
-justify-content: center;}
-
-.galeria__image {
-    height: 120px;
+  color: salmon;
 }
 
 .nav2 {
-    font-size: 2rem;
-    background-color: rgb(252, 228, 210);
+  background-color: rgb(241, 192, 191);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+/*Estilo para index*/
+
+.carousel-inner {
+  size: 40%;
+  padding: 20px;
+}
+.carousel-inner img {
+  width: 80%;
 }
 
-.nav2 select {
-    font-size: 1.5rem;
-}
-
-/*Clases para page "Diseños Disponibles"*/
-
-.estampados__titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.galeria_disenios {
-    margin-left: 20px;
-    margin-right:  20px;
-
-}
-
-.galeria_disenios div h2{
-    font-size: 2rem;
-    padding-bottom: 40px;
-}
-
-/*Clases para page "Sobre Mí"*/
-
-.sobreMi__article {
-    background-color: white;
-    width: 90%;
-    height: auto;
-    text-align: center;
-    margin: 20px auto;
-    border: dotted 6px rgb(217, 182, 189);
-    padding: 20px 20px;
-    box-sizing: border-box;
-}
-
-.sobreMi__article--fotoMarian {
-    width: 300px;
-}
-
-/*Clases para page"FAQs y Contacto"*/
-
-.preguntasFrecuentes__article {
-    background-color: white;
-    width: 90%;
-    height: auto;
-    font-size: 2rem;
-    text-align: center;
-    margin: 20px auto;
-    border: dotted 6px rgb(217, 182, 189);
-    padding: 20px 20px;
-    box-sizing: border-box;
-}
-
-.contacto {
-    display: flex;
-    margin-top: -20px;
-}
-
-.contacto__texto {
-    display: flex;
-    margin : 20px;
-    box-sizing: border-box;
-}
-
-article h3{
-padding-bottom: 20px;
-}
-
-.contacto__formulario {
-    margin: 20px;
-    padding-left: 20px;
-    color: ghostwhite;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    background-color: rgb(216, 194, 194);
-}
-
-.legend__format {
-    color: rgb(247, 141, 157);
-}
-
-.completar{
-    width: 200px;
-}
-
-/*Clases para footer*/
+/*Estilo para footer*/
 
 .footer {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
 }
 
-.footer div {
-    display: flex;
-    text-align: row;
-    margin-right: 90px;
-    margin-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin-right: 30px;
-}
-
-.footer h3 {
-    color: black;
-    font-size: 1.3rem;
+footer div {
+  margin-bottom: 10px;
 }
 
 .footer__image {
-    width: 160px;
-    margin-left: 20px;
+  width: 70px;
+}
+.footer__icon {
+  width: 20px;
+  margin-left: 6px;
 }
 
-.footer__icon {
-    width: 30px;
-    margin-left: 20px;
+.sobreMi__article {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 20px auto;
+  border: dotted 6px rgb(238, 227, 230);
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.sobreMi__article--fotoMarian {
+  width: 150px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+article h2 {
+  font-size: 2rem;
+  background-color: rgb(217, 182, 189);
+}
+
+#formularioContacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  width: 80%;
+}
+
+.card-body h2 {
+  font-size: 1.5rem;
+}
+.card-body p {
+  font-size: 1.2rem;
+}
+
+img {
+  size: 100px;
+}
+
+.imgContacto {
+  width: 80%;
+}
+
+#sobreMi {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  justify-content: center;
 }
 
 /*Aplicando Grid para estructurar página*/
-
 .contenedor {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
-        "header"
-        "nav"
-        "filtros"
-        "productos"
-        "aside"
-        "footer";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header"
+    "nav"
+    "filtros"
+    "productos"
+    "aside"
+    "footer";
 }
-
 #nav1 {
-    grid-area: nav;
-    height: 20vh;
+  grid-area: nav;
+  height: 10vh;
 }
 
 #header {
-    grid-area: header;
-    height: 6vh;
+  grid-area: header;
+  height: 6vh;
 }
 
 #filtros {
-    grid-area: filtros;
+  grid-area: filtros;
 }
 
 #productos {
-    grid-area: productos;
+  grid-area: productos;
 }
 
 #aside {
-    grid-area: aside;
+  grid-area: aside;
 }
 
 #footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
-@media (min-width: 768px){
+/*Media Queries*/
 
-	.contenedor{
-		grid-template-columns: 30vw 70vw;
-		grid-template-rows: repeat(6, auto);
-		grid-template-areas: 
-        "header header"
-        "nav nav"
-        "filtros filtros"
-        "productos productos"
-        "aside aside"
-        "footer footer";
-	}
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "filtros filtros"
+      "productos productos"
+      "aside aside"
+      "footer footer";
+  }
 
-    .botonera ul li a {
-        font-size: 1.4rem;
-        padding: 10px;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    .sobreMi__article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 
-    article h3{
-        padding-bottom: 20px;
-    }
+  h3 {
+    font-size: 1.5rem;
+  }
 
-    .footer{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;    
-    }
-   
-    .footer h3 {
-        color: black;
-    }
-    
-    .footer__image {
-        width: 100px;
-        margin-left: 20px;
-    }
-    
-    .footer__icon {
-        width: 30px;
-        margin-left: 20px;
-    }
+  #nav1 {
+    height: 15vh;
+  }
 
-    .contacto {
-        display: inline-block;
-    }
+  .imgNav {
+    width: 4%;
+  }
 
-    article h3 {
-        align-self: center;
-        margin-right: 30px;
-        font-size: 2rem;
-    }
-    
-    main h2 {
-        font-size: 2rem;
-    }
+  .bg-nav {
+    background-color: white;
+  }
 
-    .galeria_disenios {
-    display: flex;
-    justify-content: center;
-    }
+  .bg-nav ul li a {
+    font-size: 1rem;
+  }
 
-    textarea{
-        display: flex;
-    }
+  .encabezado__box {
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+  }
 
-    .completar{
-        width: 200px;
-    }
-   }
-    
- @media (min-width: 1024px){
-	.contenedor{
-		grid-template-columns: 20vw 60vw 20vw;
-		grid-template-rows: repeat(4, auto);
-		grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "filtros productos aside"
-        "footer footer footer";
-	}
+  .carousel-inner img {
+    width: 80%;
+  }
 
-    .botonera{
+  .card {
+    width: 80%;
+  }
+
+  .card-body h2 {
+    font-size: 1.5rem;
+  }
+  .card-body p {
+    font-size: 1.5rem;
+  }
+
+  .imgContacto {
+    width: 50%;
+  }
+
+  .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    }
+    justify-content: space-evenly;
+  }
+  .footer__image {
+    width: 140px;
+  }
+  .footer__icon {
+    width: 30px;
+    margin-left: 6px;
+  }
 
-    .botonera ul li a {
-        font-size: 1.8rem;
-        padding: 10px;
-    }
+  footer h3 {
+    font-size: 1.2rem;
+  }
+}
 
-    .encabezado__logoMarca {
-        width: 140px;
-    }
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "filtros productos aside"
+      "footer footer footer";
+  }
 
-        main h2 {
-        padding-bottom: 20px;
-        }
+  nav img {
+    width: 70%;
+  }
 
-        .completar{
-            width: 300px;
-        }
+  #nav1 li a {
+    font-size: 1.5rem;
+  }
 
-        .galeria {
-        display: flex;
-        flex-wrap: nowrap;
-        }
-       
-        .section_contacto {
-            margin: 30px;
-            display: flex;
-            flex-direction: column;
-        }
+  .carousel-inner img {
+    width: 70%;
+  }
 
-       .footer__image {
-        width: 140px;
-        margin-left: 20px;
-    }
+  select {
+    width: 100%;
+  }
+
+  .imgNav {
+    width: 60%;
+  }
+
+  .card-body h2 {
+    font-size: 1.2rem;
+  }
+  .card-body p {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .imgContacto {
+    width: 60%;
+  }
 }
