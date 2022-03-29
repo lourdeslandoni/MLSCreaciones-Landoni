@@ -1,0 +1,22 @@
+#formularioContacto {
+    background-color: rgb(217, 182, 189);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  article {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    h2 {
+        font-size: 2rem;
+  }
+}
+   
+.img-thumbnail {
+width: 80%;  
+}
+  
+  

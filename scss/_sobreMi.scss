@@ -1,0 +1,19 @@
+#sobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+
+.sobreMi__article {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 20px auto;
+    border: dotted 6px rgb(238, 227, 230);
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
+  
+  .sobreMi__article--fotoMarian {
+    width: 150px;
+  }
