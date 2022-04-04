@@ -1,0 +1,157 @@
+//Page "Index"
+.carousel-inner {
+  size: 40%;
+  padding: 20px;
+  img {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+//Page "Diseños Disponibles"
+
+.estampados__titulo {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+h1 a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bolder;
+  &:hover {
+    color: map-get($map: $paleta, $key: "seis");
+  }
+}
+
+//Page "Productos"
+.nav2 {
+  background-color: map-get($map: $paleta, $key: "tres");
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-size: 1.5rem;
+  li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bolder;
+  &:hover {
+    color: map-get($map: $paleta, $key: "seis");
+  }
+}
+
+.row {
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  width: 80%;
+}
+
+.card-body {
+  background-color: map-get($map: $paleta, $key: "tres");
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  background-color: map-get($map: $paleta, $key: "tres");
+}
+
+.btn {
+  background-color: map-get($map: $paleta, $key: "seis");
+  color: map-get($map: $paleta, $key: "cuatro");
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-body {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//Page "Sobre Mí"
+
+.sobreMi__article {
+  @include flex(column, center);
+  font-size: 1rem;
+  background-color: map-get($map: $paleta, $key: "cuatro");
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border: dotted 6px map-get($map: $paleta, $key: "tres");
+  padding: 20px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.sobreMi__article--fotoMarian {
+  width: 150px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
+}
+
+// Page "Faqs&Contacto"
+
+.card-title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.col-form-label {
+  font-size: 1.2rem;
+}
+
+#formularioContacto {
+  @include flex(column, center);
+  font-size: 1.4rem;
+  background-color: map-get($map: $paleta, $key: "cinco");
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  background-color: map-get($map: $paleta, $key: "tres");
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.img-thumbnail {
+  width: 100%;
+}

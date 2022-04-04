@@ -1,10 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap");
+
+//Aplicando SASS para Desafío Entregable 7
+@mixin texto($font-size, $color, $font-weight) {
+  font-size: $font-size;
+  color: $color;
+  font-weight: $font-weight;
+}
+
+@mixin flex($flex-direction, $text-align) {
+  display: flex;
+  flex-direction: $flex-direction;
+  text-align: $text-align;
+}
+
+$paleta: (
+  "uno": rgb(218, 114, 148),
+  "dos": rgb(238, 227, 230),
+  "tres": rgb(241, 192, 191),
+  "cuatro": rgb(255, 255, 255),
+  "cinco": rgb(217, 182, 189),
+  "seis": rgb(255, 129, 115),
+  "siete": rgb(243, 164, 162),
+  "ocho": rgb(250, 235, 215),
+);
+
+.btn-submit {
+  @extend .btn;
+  border-radius: 0.25rem;
+  border: none;
+  margin: 10px;
+  padding: 0.5rem 1.75rem;
+  &:hover {
+    background: green;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.btn-reset {
+  @extend .btn;
+  border-radius: 0.25rem;
+  border: none;
+  margin: 10px;
+  padding: 0.5rem 1.75rem;
+  &:hover {
+    background: red;
+    color: black;
+    cursor: pointer;
+  }
+}
+//Comienzan clases generales
+
 * {
   font-size: 85%;
   margin: 0;
   padding-left: 0px;
   padding-right: 0px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 html {
@@ -14,7 +67,7 @@ html {
 h1,
 h2,
 h3 {
-  color: palevioletred;
+  color: map-get($map: $paleta, $key: "uno");
   font-family: "Cabin", sans-serif;
   text-align: center;
 }
@@ -42,10 +95,11 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   box-sizing: border-box;
-  background-color: rgb(238, 227, 230);
+  background-color: map-get($map: $paleta, $key: "dos");
   padding: 10px 10px;
 }
 
+//Estructurando las pages con GRIDS
 .contenedor {
   display: grid;
   grid-template-columns: 1fr;
@@ -108,6 +162,11 @@ body {
   h3 {
     font-size: 1.5rem;
   }
+
+  .sobreMi__article--fotoMarian {
+    width: 300px;
+  }
+
   .encabezado__box {
     font-size: 1.6rem;
     padding-bottom: 40px;
