@@ -1,11 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap");
+.btn-submit {
+  border-radius: 0.25rem;
+  border: none;
+  margin: 10px;
+  padding: 0.5rem 1.75rem; }
+  .btn-submit:hover {
+    background: green;
+    color: black;
+    cursor: pointer; }
+
+.btn-reset {
+  border-radius: 0.25rem;
+  border: none;
+  margin: 10px;
+  padding: 0.5rem 1.75rem; }
+  .btn-reset:hover {
+    background: red;
+    color: black;
+    cursor: pointer; }
+
 * {
   font-size: 85%;
   margin: 0;
   padding-left: 0px;
   padding-right: 0px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 0.8rem; }
+  font-size: 1rem; }
 
 html {
   font-size: 85%; }
@@ -13,7 +33,7 @@ html {
 h1,
 h2,
 h3 {
-  color: palevioletred;
+  color: #da7294;
   font-family: "Cabin", sans-serif;
   text-align: center; }
 
@@ -76,6 +96,8 @@ body {
     font-size: 2rem; }
   h3 {
     font-size: 1.5rem; }
+  .sobreMi__article--fotoMarian {
+    width: 300px; }
   .encabezado__box {
     font-size: 1.6rem;
     padding-bottom: 40px; }
@@ -103,7 +125,7 @@ body {
     text-decoration: none;
     padding: 10px; }
     .bg-nav a:hover {
-      color: salmon; }
+      color: #ff8173; }
 
 .imgNav {
   width: 4%; }
@@ -118,58 +140,18 @@ nav img {
   height: 15vh; }
 
 @media (min-width: 768px) {
-  .contenedor {
-    grid-template-columns: 30vw 70vw;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "header header" "nav nav" "filtros filtros" "productos productos" "aside aside" "footer footer"; }
   .bg-nav {
     background-color: white; }
     .bg-nav ul li a {
       font-size: 1rem; } }
 
 @media (min-width: 1024px) {
-  .contenedor {
-    grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header header header" "nav nav nav" "filtros productos aside" "footer footer footer"; }
   nav img {
     width: 70%; }
   #nav1 li a {
     font-size: 1.5rem; }
   .imgNav {
     width: 60%; } }
-
-.footer {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 10px; }
-  .footer div {
-    margin-bottom: 10px; }
-  .footer h3 {
-    color: salmon;
-    font-size: 0.8rem; }
-
-.footer__image {
-  width: 70px; }
-
-.footer__icon {
-  width: 20px;
-  margin-left: 6px; }
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .footer h3 {
-      font-size: 1.2rem; }
-  .footer__image {
-    width: 140px; }
-  .footer__icon {
-    width: 30px;
-    margin-left: 6px; } }
 
 .carousel-inner {
   size: 40%;
@@ -178,14 +160,34 @@ nav img {
     width: 80%;
     margin: auto; }
 
+.estampados__titulo {
+  font-size: 2rem;
+  font-weight: bolder; }
+
+h1 a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bolder; }
+  h1 a:hover {
+    color: #ff8173; }
+
 .nav2 {
   background-color: #f1c0bf;
   padding: 0.5rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-size: 1.5rem; }
   .nav2 li {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.5rem; }
   .nav2 ul {
     padding-left: 0; }
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bolder; }
+  a:hover {
+    color: #ff8173; }
 
 .row {
   justify-content: center; }
@@ -195,7 +197,7 @@ nav img {
   width: 80%; }
 
 .card-body {
-  background-color: #eee3e6; }
+  background-color: #f1c0bf; }
   .card-body h2 {
     font-size: 1.5rem; }
   .card-body p {
@@ -203,7 +205,12 @@ nav img {
 
 .card-img-top {
   width: 100%;
-  background-color: #eee3e6; }
+  background-color: #f1c0bf; }
+
+.btn, .btn-submit, .btn-reset {
+  background-color: #ff8173;
+  color: white;
+  font-weight: bolder; }
 
 @media (min-width: 768px) {
   .card-body p {
@@ -217,36 +224,81 @@ nav img {
   .card-body p {
     font-size: 1.2rem; } }
 
-#sobreMi {
-  display: flex;
-  flex-direction: column; }
-
 .sobreMi__article {
-  background-color: white;
-  width: 80%;
-  height: auto;
-  text-align: center;
-  margin: 20px auto;
-  border: dotted 6px #eee3e6;
-  padding: 20px 20px;
-  box-sizing: border-box; }
-
-.sobreMi__article--fotoMarian {
-  width: 150px; }
-
-#formularioContacto {
-  background-color: #d9b6bd;
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 1.4rem; }
+  font-size: 1rem;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border: dotted 6px #f1c0bf;
+  padding: 20px 20px;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .sobreMi__article {
+      font-size: 1.5rem; } }
+
+.sobreMi__article--fotoMarian {
+  width: 150px; }
+  @media (min-width: 768px) {
+    .sobreMi__article--fotoMarian {
+      width: 300px; } }
+
+.card-title {
+  text-align: center;
+  font-weight: bolder; }
+
+.col-form-label {
+  font-size: 1.2rem; }
+
+#formularioContacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #d9b6bd; }
 
 article {
   display: flex;
   justify-content: center;
-  background-color: white; }
+  background-color: #f1c0bf; }
   article h2 {
     font-size: 2rem; }
 
 .img-thumbnail {
-  width: 80%; }
+  width: 100%; }
+
+.footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: flex-start;
+  margin-left: 10px; }
+  .footer div {
+    margin-bottom: 10px; }
+  .footer h3 {
+    color: #ff8173;
+    font-size: 0.8rem; }
+
+.footer__image {
+  width: 70px; }
+
+.footer__icon {
+  width: 20px;
+  margin-left: 6px; }
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly; }
+    .footer h3 {
+      font-size: 1.2rem; }
+  .footer__image {
+    width: 140px; }
+  .footer__icon {
+    width: 30px;
+    margin-left: 6px; } }
