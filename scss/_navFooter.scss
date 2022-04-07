@@ -1,3 +1,4 @@
+//NavBar
 .bg-nav {
   background-color: map-get($map: $paleta, $key: "cuatro");
   padding: 10px;
@@ -15,16 +16,16 @@
   }
 }
 
+#navbarSupportedContent {
+  z-index: 1;
+}
+
 .imgNav {
   width: 4%;
 }
 
 nav img {
   width: 50%;
-}
-
-.navbar-toggler-icon {
-  background-color: map-get($map: $paleta, $key: "ocho");
 }
 
 #nav1 {
@@ -51,5 +52,47 @@ nav img {
 
   .imgNav {
     width: 60%;
+  }
+}
+
+//Footer
+
+.footer {
+  background-color: map-get($map: $paleta, $key: "cuatro");
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  div {
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: map-get($map: $paleta, $key: "seis");
+    font-size: 0.8rem;
+  }
+}
+
+.footer__image {
+  width: 50px;
+}
+.footer__icon {
+  width: 20px;
+  margin-left: 6px;
+  padding-top: -20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    @include flex(row, center);
+    justify-content: space-evenly;
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  .footer__image {
+    width: 140px;
+  }
+  .footer__icon {
+    width: 30px;
   }
 }

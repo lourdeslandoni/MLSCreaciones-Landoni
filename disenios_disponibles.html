@@ -29,7 +29,7 @@
       <nav class="navbar navbar-expand-lg bg-nav" id="nav1">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo de MLS creaciones" class="w-70" />
+            <img src="img/logo.png" alt="logo de MLS creaciones" />
           </a>
           <button
             class="navbar-toggler"
@@ -40,7 +40,13 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <img
+                src="img/hamburguerButton.png"
+                class="w-40"
+                alt="ícono de botón hamburguesa"
+              />
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -108,34 +114,251 @@
               <a href="faqs_contacto.html">Newsletter</a>
             </h1>
           </div>
-          <figure>
-            <figcaption class="estampados__titulo">Gatitos</figcaption>
-            <img
-              src="img/estGatitos.png"
-              alt="variedad de estampados de gatitos"
-            />
-          </figure>
-          <figure>
-            <figcaption class="estampados__titulo">Perritos</figcaption>
-            <img
-              src="img/estPerritos.png"
-              alt="variedad de estampados de perritos"
-            />
-          </figure>
-          <figure>
-            <figcaption class="estampados__titulo">Flores</figcaption>
-            <img
-              src="img/estFlores.png"
-              alt="variedad de estampados de flores"
-            />
-          </figure>
-          <figure>
-            <figcaption class="estampados__titulo">Harry Potter</figcaption>
-            <img
-              src="img/estHP.png"
-              alt="variedad de estampados personalizados de Harry Potter"
-            />
-          </figure>
+          <!-- Inicia carousel 1 -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <p class="encabezadoCarousel">Serie Flores</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/cactus.png" alt="imagen de estampado cactus" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/floresAcuarela.png"
+                  alt="imagen de estampado flores acuarela"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/floresAqua.png"
+                  alt="imagen de estampado flores aqua"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/floresFemenina1.png"
+                  alt="imagen de estampado flores femenina 1"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Ends carousel 1 -->
+          <!-- Inicia carousel 2 -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <p class="encabezadoCarousel">Serie Gatitos</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/caritasGatites.png"
+                  class="w-40"
+                  alt="imagen de estampado caritas de gatites"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/gatitos1.png"
+                  class="w-40"
+                  alt="imagen de estampado gatitos 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/gatitosFelices.png"
+                  class="w-40"
+                  alt="imagen de estampado gatitos felices"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/gatitosPower.png"
+                  class="w-40"
+                  alt="imagen de estampado gatitos power"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Ends carousel 2 -->
+          <!-- Inicia carousel 3 -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <p class="encabezadoCarousel">Serie Perritos</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/perritos2.png"
+                  class="w-40"
+                  alt="imagen de estampado perritos 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/perritos3.png"
+                  class="w-40"
+                  alt="imagen de estampado perritos 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/perritosAcuarela.png"
+                  class="w-40"
+                  alt="imagen de estampado perritos acuarela"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/caritaPerritos.png"
+                  class="w-40"
+                  alt="imagen de estampado carita perritos"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Ends carousel 3 -->
+          <!-- Inicia carousel 4 -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <p class="encabezadoCarousel">Serie Objetos</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/buenaVida.png"
+                  class="w-40"
+                  alt="imagen de estampado buena vida"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/plumas.png"
+                  class="w-40"
+                  alt="imagen de estampado plumas"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/mixTropical.png"
+                  class="w-40"
+                  alt="imagen de estampado mix tropical"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/camara.png"
+                  class="w-40"
+                  alt="imagen de estampado cámara"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Ends carousel 4 -->
         </section>
       </main>
       <footer class="footer" id="footer">

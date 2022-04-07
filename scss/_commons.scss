@@ -16,7 +16,7 @@
 $paleta: (
   "uno": rgb(218, 114, 148),
   "dos": rgb(238, 227, 230),
-  "tres": rgb(241, 192, 191),
+  "tres": rgb(255, 211, 202),
   "cuatro": rgb(255, 255, 255),
   "cinco": rgb(217, 182, 189),
   "seis": rgb(255, 129, 115),
@@ -34,6 +34,12 @@ $paleta: (
     background: green;
     color: black;
     cursor: pointer;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
   }
 }
 
@@ -77,7 +83,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h3 {

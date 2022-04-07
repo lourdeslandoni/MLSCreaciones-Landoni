@@ -8,6 +8,11 @@
     background: green;
     color: black;
     cursor: pointer; }
+  .btn-submit a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white; }
 
 .btn-reset {
   border-radius: 0.25rem;
@@ -41,7 +46,7 @@ h1 {
   font-size: 1.5rem; }
 
 h2 {
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 h3 {
   font-size: 0.8rem; }
@@ -127,14 +132,14 @@ body {
     .bg-nav a:hover {
       color: #ff8173; }
 
+#navbarSupportedContent {
+  z-index: 1; }
+
 .imgNav {
   width: 4%; }
 
 nav img {
   width: 50%; }
-
-.navbar-toggler-icon {
-  background-color: antiquewhite; }
 
 #nav1 {
   height: 15vh; }
@@ -153,16 +158,57 @@ nav img {
   .imgNav {
     width: 60%; } }
 
-.carousel-inner {
+.footer {
+  background-color: white;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .footer div {
+    margin-bottom: 10px; }
+  .footer h3 {
+    color: #ff8173;
+    font-size: 0.8rem; }
+
+.footer__image {
+  width: 50px; }
+
+.footer__icon {
+  width: 20px;
+  margin-left: 6px;
+  padding-top: -20px; }
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly; }
+    .footer h3 {
+      font-size: 1.2rem; }
+  .footer__image {
+    width: 140px; }
+  .footer__icon {
+    width: 30px; } }
+
+.carousel-index {
   size: 40%;
   padding: 20px; }
-  .carousel-inner img {
+  .carousel-index img {
     width: 80%;
     margin: auto; }
 
-.estampados__titulo {
-  font-size: 2rem;
-  font-weight: bolder; }
+.galeria_disenios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+
+.encabezadoCarousel {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-top: 60px; }
 
 h1 a {
   font-size: 2rem;
@@ -171,58 +217,115 @@ h1 a {
   h1 a:hover {
     color: #ff8173; }
 
+.carousel {
+  width: 100%; }
+
+.carousel-inner img {
+  width: 600px;
+  height: 200px;
+  padding: 0px; }
+
 .nav2 {
-  background-color: #f1c0bf;
+  background-color: #ffd3ca;
   padding: 0.5rem;
   font-size: 1rem;
   font-size: 1.5rem; }
   .nav2 li {
     list-style: none;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
+    @media (min-width: 768px) {
+      .nav2 li {
+        font-size: 1.5rem; } }
   .nav2 ul {
     padding-left: 0; }
 
 a {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bolder; }
   a:hover {
     color: #ff8173; }
+  @media (min-width: 768px) {
+    a {
+      font-size: 2rem; } }
+
+#aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly; }
+  @media (min-width: 768px) {
+    #aside {
+      display: flex;
+      flex-direction: row;
+      text-align: center; } }
+  @media (min-width: 1024px) {
+    #aside {
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
+  #aside figcaption {
+    font-size: 1rem;
+    font-weight: bolder; }
+
+img {
+  width: 20%; }
+  @media (min-width: 768px) {
+    img {
+      width: 30%; } }
+  @media (min-width: 1024px) {
+    img {
+      width: 70%; } }
 
 .row {
   justify-content: center; }
 
 .card {
   align-items: center;
-  width: 80%; }
+  width: 90%;
+  background-color: #ffd3ca; }
+  @media (min-width: 1024px) {
+    .card .card {
+      width: 100%; } }
+
+.container-fluid h3 {
+  color: #ff8173;
+  font-style: italic; }
 
 .card-body {
-  background-color: #f1c0bf; }
+  background-color: #ffd3ca;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 80%; }
   .card-body h2 {
     font-size: 1.5rem; }
   .card-body p {
-    font-size: 1.2rem; }
+    font-size: 1rem;
+    font-weight: bold; }
+    @media (min-width: 768px) {
+      .card-body p {
+        font-size: 1.5rem; } }
+  .card-body h4 {
+    color: #ff8173; }
+  @media (min-width: 1024px) {
+    .card-body h2 {
+      font-size: 1.2rem; }
+    .card-body p {
+      font-size: 1.2rem; } }
 
 .card-img-top {
-  width: 100%;
-  background-color: #f1c0bf; }
+  width: 70%;
+  background-color: #ffd3ca; }
+  @media (min-width: 1024px) {
+    .card-img-top {
+      width: 100%; } }
 
 .btn, .btn-submit, .btn-reset {
   background-color: #ff8173;
   color: white;
   font-weight: bolder; }
-
-@media (min-width: 768px) {
-  .card-body p {
-    font-size: 1.5rem; } }
-
-@media (min-width: 1024px) {
-  .card {
-    width: 100%; }
-  .card-body h2 {
-    font-size: 1.2rem; }
-  .card-body p {
-    font-size: 1.2rem; } }
 
 .sobreMi__article {
   display: flex;
@@ -233,7 +336,7 @@ a {
   width: 80%;
   height: auto;
   margin: 20px auto;
-  border: dotted 6px #f1c0bf;
+  border: dotted 6px #ffd3ca;
   padding: 20px 20px;
   box-sizing: border-box; }
   @media (min-width: 768px) {
@@ -262,43 +365,47 @@ a {
 
 article {
   display: flex;
-  justify-content: center;
-  background-color: #f1c0bf; }
+  justify-content: center; }
   article h2 {
     font-size: 2rem; }
 
 .img-thumbnail {
   width: 100%; }
 
-.footer {
-  background-color: white;
+.error404 {
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
-  text-align: flex-start;
-  margin-left: 10px; }
-  .footer div {
-    margin-bottom: 10px; }
-  .footer h3 {
-    color: #ff8173;
-    font-size: 0.8rem; }
-
-.footer__image {
-  width: 70px; }
-
-.footer__icon {
-  width: 20px;
-  margin-left: 6px; }
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-evenly; }
-    .footer h3 {
-      font-size: 1.2rem; }
-  .footer__image {
-    width: 140px; }
-  .footer__icon {
-    width: 30px;
-    margin-left: 6px; } }
+  text-align: center;
+  align-items: center; }
+  .error404 h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 20px; }
+    @media (min-width: 768px) {
+      .error404 h1 {
+        font-size: 2.5rem; } }
+  .error404 img {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .error404 img {
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .error404 img {
+        width: 60%; } }
+  .error404 p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #da7294; }
+    @media (min-width: 728px) {
+      .error404 p {
+        font-size: 2.5rem; } }
+  .error404 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder; }
+    .error404 a:hover {
+      color: #ff8173; }
+    @media (min-width: 728px) {
+      .error404 a {
+        font-size: 2.5rem; } }
