@@ -152,7 +152,7 @@ nav img {
 
 @media (min-width: 1024px) {
   nav img {
-    width: 70%; }
+    width: 65%; }
   #nav1 li a {
     font-size: 1.5rem; }
   .imgNav {
@@ -197,6 +197,9 @@ nav img {
   .carousel-index img {
     width: 80%;
     margin: auto; }
+
+b {
+  font-size: 1.5rem; }
 
 .galeria_disenios {
   display: flex;

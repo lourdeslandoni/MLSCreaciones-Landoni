@@ -10,6 +10,10 @@
 
 //Page "Diseños Disponibles"
 
+b{
+  font-size: 1.5rem
+}
+
 .galeria_disenios {
   @include flex(column, center);
   align-items: center;
