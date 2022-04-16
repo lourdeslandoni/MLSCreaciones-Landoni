@@ -1,6 +1,6 @@
 //Page "Index"
 .carousel-index {
-  size: 40%;
+  size: 20%;
   padding: 20px;
   img {
     width: 80%;
@@ -10,8 +10,19 @@
 
 //Page "Diseños Disponibles"
 
-b{
-  font-size: 1.5rem
+.galeria_disenios{
+  a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bolder;
+  &:hover {
+    color: map-get($map: $paleta, $key: "seis");
+  }
+}
+h2{
+  padding-top: 10px;
+  margin-bottom: -2px;
+}
 }
 
 .galeria_disenios {
@@ -20,29 +31,29 @@ b{
 }
 
 .encabezadoCarousel {
-  font-size: 2.5rem;
+  width: 80%;
+  font-size: 1.2rem;
   font-weight: bolder;
-  margin-bottom: 0;
-  margin-top: 60px;
-}
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: map-get($map: $paleta, $key: "cinco");
 
-h1 a {
-  font-size: 2rem;
-  text-decoration: none;
-  font-weight: bolder;
-  &:hover {
-    color: map-get($map: $paleta, $key: "seis");
-  }
 }
 
 .carousel {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 .carousel-inner img {
-  width: 600px;
-  height: 200px;
-  padding: 0px;
+  width: 260px;
+  height: 100px;
+  @media (min-width: 768px) {
+    width: 600px;
+    height: 200px;  }
+  @media (min-width: 1024px) {
+    width: 600px;
+    height: 200px;  }
 }
 
 //Page "Productos"
@@ -62,7 +73,6 @@ h1 a {
     padding-left: 0;
   }
 }
-
 a {
   font-size: 1rem;
   text-decoration: none;
@@ -73,6 +83,24 @@ a {
   @media (min-width: 768px) {
     font-size: 2rem;
   }
+}
+
+.estampadosNav2{
+  @include flex(column, center);
+  align-items: flex-start;
+  margin: 0px;
+  label{
+    font-size: 1.2rem;
+  }
+  h3{
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+  @media (min-width: 1024px) {
+    span{
+    padding-top: 6px;
+}
+}
 }
 
 #aside {
@@ -107,51 +135,55 @@ img {
 .card {
   align-items: center;
   width: 90%;
-  background-color: map-get($map: $paleta, $key: "tres");
+  background-color: map-get($map: $paleta, $key: "ocho");
+  margin: 20px;
+  @media (min-width: 768px) {
+    height: 100%;
+    margin: 0px;
+}
   @media (min-width: 1024px) {
-    .card {
       width: 100%;
-    }
   }
 }
 .container-fluid {
   h3 {
+    font-size: 0.8rem;
     color: map-get($map: $paleta, $key: "seis");
     font-style: italic;
   }
 }
 
 .card-body {
-  background-color: map-get($map: $paleta, $key: "tres");
   @include flex(column, center);
   justify-content: space-around;
-  width: 80%;
-  h2 {
-    font-size: 1.5rem;
+  width: 100%;
+  padding: -1px 15px;
+  margin: 0px;
+  h4 {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: map-get($map: $paleta, $key: "seis");
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
   }
+}
   p {
     font-size: 1rem;
     font-weight: bold;
+    margin: 0px;
+    line-height: 2rem;
     @media (min-width: 768px) {
       font-size: 1.5rem;
     }
-  }
-  h4 {
-    color: map-get($map: $paleta, $key: "seis");
-  }
-  @media (min-width: 1024px) {
-    h2 {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 1.2rem;
+    @media (min-width: 1024px) {
+      font-size: 1.3rem;
     }
   }
 }
 
 .card-img-top {
+  padding-top: 10px;
   width: 70%;
-  background-color: map-get($map: $paleta, $key: "tres");
   @media (min-width: 1024px) {
     width: 100%;
   }
@@ -159,7 +191,7 @@ img {
 
 .btn {
   background-color: map-get($map: $paleta, $key: "seis");
-  color: map-get($map: $paleta, $key: "cuatro");
+  color: map-get($map: $paleta, $key: "nueve");
   font-weight: bolder;
 }
 //Page "Sobre Mí"
@@ -167,20 +199,24 @@ img {
 .sobreMi__article {
   @include flex(column, center);
   font-size: 1rem;
-  background-color: map-get($map: $paleta, $key: "cuatro");
+  background-color: map-get($map: $paleta, $key: "nueve");
   width: 80%;
   height: auto;
   margin: 20px auto;
-  border: dotted 6px map-get($map: $paleta, $key: "tres");
+  border: dotted 6px map-get($map: $paleta, $key: "cinco");
   padding: 20px 20px;
   box-sizing: border-box;
+  padding-top: 4px;
+  line-height: 1.8rem;
   @media (min-width: 768px) {
     font-size: 1.5rem;
+    line-height: 3rem;
   }
 }
 
 .sobreMi__article--fotoMarian {
   width: 150px;
+  padding-bottom: 20px;
   @media (min-width: 768px) {
     width: 300px;
   }
@@ -188,9 +224,23 @@ img {
 
 // Page "Faqs&Contacto"
 
+span p{
+    background-color: map-get($map: $paleta, $key: "seis");
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: map-get($map: $paleta, $key: "nueve");
+  text-align: center;
+  margin: 20px;
+    }
+
+
 .card-title {
   text-align: center;
   font-weight: bolder;
+}
+
+.section_contacto{
+margin: 20px;
 }
 
 .col-form-label {
@@ -203,8 +253,8 @@ img {
   background-color: map-get($map: $paleta, $key: "cinco");
 }
 
+
 article {
-  display: flex;
   justify-content: center;
   h2 {
     font-size: 2rem;
@@ -213,6 +263,7 @@ article {
 
 .img-thumbnail {
   width: 100%;
+  height: 100%;
 }
 
 //Page "Error 404"

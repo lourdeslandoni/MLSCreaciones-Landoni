@@ -17,11 +17,12 @@ $paleta: (
   "uno": rgb(218, 114, 148),
   "dos": rgb(238, 227, 230),
   "tres": rgb(255, 211, 202),
-  "cuatro": rgb(255, 255, 255),
+  "cuatro": rgb(241, 179, 177),
   "cinco": rgb(217, 182, 189),
   "seis": rgb(255, 129, 115),
   "siete": rgb(243, 164, 162),
   "ocho": rgb(250, 235, 215),
+  "nueve": white
 );
 
 .btn-submit {
@@ -39,7 +40,7 @@ $paleta: (
     font-size: 1rem;
     text-decoration: none;
     font-weight: bolder;
-    color: white;
+    color: map-get($map: $paleta, $key: "nueve");
   }
 }
 
@@ -79,30 +80,45 @@ h3 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-top: 10px;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 body {
   background-image: url(../img/background.png);
   background-attachment: fixed;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .encabezado__box {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   box-sizing: border-box;
   background-color: map-get($map: $paleta, $key: "dos");
   padding: 10px 10px;
+  @media (min-width: 768px) {
+      font-size: 1.6rem;
+      padding-bottom: 40px;
+    }
 }
 
 //Estructurando las pages con GRIDS
@@ -120,7 +136,7 @@ body {
 }
 #nav1 {
   grid-area: nav;
-  height: 10vh;
+  height: 17vh;
 }
 
 #header {
@@ -134,6 +150,7 @@ body {
 
 #productos {
   grid-area: productos;
+  padding-bottom: 10px;
 }
 
 #aside {
@@ -142,6 +159,7 @@ body {
 
 #footer {
   grid-area: footer;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -157,26 +175,10 @@ body {
       "footer footer";
   }
 
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
   .sobreMi__article--fotoMarian {
     width: 300px;
   }
 
-  .encabezado__box {
-    font-size: 1.6rem;
-    padding-bottom: 40px;
-  }
   .carousel-inner img {
     width: 80%;
   }

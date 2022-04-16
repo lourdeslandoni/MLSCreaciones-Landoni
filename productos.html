@@ -35,7 +35,10 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon">
-        <img src="img/hamburguerButton.png" class="w-40" alt="ícono de botón hamburguesa">
+        <img
+          src="img/hamburguerButton.png"
+          alt="ícono de botón hamburguesa"
+        />
       </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -95,30 +98,42 @@
 <!-- ends nav 1 -->
 <!-- inicia nav 2 -->
       <nav id="filtros" class="nav2 animate__animated animate__fadeInLeft">
-        <form>
+        <div class="estampadosNav2">
+          <span><h3>Productos</h3></span>
+          <form>
             <select name="productos" id="productos">
                 <option value="cartucheras">Cartucheras</option>
                 <option value="Agendas 2022">Agendas 2022</option>
                 <option value="combos_mes">Combos Especiales</option>
             </select>
         </form>
-        <span><b>Diseños</b></span>
-        <ul>
-            <li>Gatitos (7)</li>
-            <li>Perritos (10)</li>
-            <li>Flores (1)</li>
-            <li>Harry Potter (1)</li>
-        </ul>
-    </nav>
+          <span><h3>Diseños</h3></span>
+          <span> 
+            <input type="checkbox" value="flores" id="flores" name="flores">
+            <label for="flores">Flores</label>
+          </span>
+          <span> 
+            <input type="checkbox" value="gatitos" id="gatitos" name="gatitos">
+            <label for="gatitos">Gatitos</label>
+          </span>
+          <span> 
+            <input type="checkbox" value="perritos" id="perritos" name="perritos">
+            <label for="perritos">Perritos</label>
+          </span>
+          <span> 
+            <input type="checkbox" value="objetos" id="objetos" name="objetos">
+            <label for="objetos">Objetos</label>
+          </span>
+        </div>
+      </nav>
 <!-- ends nav 2 -->
       <main class="p-3" id="productos">
         <!-- inician productos -->
         <section class="py-3 animate__animated animate__fadeIn">
           <div class="container-fluid">
-            <h2 class="text-center">Cartucheras <a href="disenios_disponibles.html">(Estampado a Elección)</a>
-            </h2>
-            <h3>Medidas expresadas en largo x alto x ancho</h4>
-            <div class="row">
+            <h2>Cartucheras <a href="disenios_disponibles.html">(Estampado a Elección)</a></h2>
+              <h3>Medidas expresadas en (largo x alto x ancho) cm</h3>
+              <div class="row">
               <article class="col-md-6 col-lg-3 pb-3 text-center">
                 <div class="card">
                   <img
@@ -128,7 +143,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Cartu Pocket</h4>
-                    <p class="size">(18 x 5 x 6) cm</p>
+                    <p class="size">(18 x 5 x 6)</p>
                     <p class="price">$350</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                 </div>
@@ -144,7 +159,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Cartu Peque</h4>
-                    <p class="size">(18 x 7 x 8) cm</p>
+                    <p class="size">(18 x 7 x 8)</p>
                     <p class="price">$550</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                 </div>
@@ -160,7 +175,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Cartu Neceser</h4>
-                    <p class="size">(20 x 10 x 8) cm</p>
+                    <p class="size">(20 x 10 x 8)</p>
                     <p class="price">$700</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                 </div>
@@ -176,7 +191,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Cartu Neceser XL</h4>
-                    <p class="size">(23 x 19 x 12) cm</p>
+                    <p class="size">(23 x 19 x 12)</p>
                     <p class="price">$900</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                 </div>
@@ -270,7 +285,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Combo Perritos</h4>
-                    <p class="details">Incluye Bolso A4 y Cartu Modelo "Neceser"</p>
+                    <p class="details">Bolso A4 + Cartu "Neceser"</p>
                     <p class="price">$950</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                   </div>
@@ -287,7 +302,7 @@
                   />
                   <div class="card-body">
                     <h4 class="card-title">Combo Matero</h4>
-                    <p class="details">Incluye Bolso Matero, Porta Mate y Yerbero</p>
+                    <p class="details">Bolso Matero + Porta Mate + Yerbero</p>
                     <p class="price">$1000</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                   </div>
@@ -305,7 +320,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Combo Libretas</h4>
                     <p class="size">
-                    Incluye 2 libretas tamaño A6 -  (18 x 7 x 8) cm
+                    Libretas tamaño A6 (X2)
                     </p>
                     <p class="price">$700</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
@@ -324,7 +339,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Combo Clean</h4>
                     <p class="size">
-                    Incluye Cestito y Jabón Artesanal (Consultar Stock)</p>
+                    Cestito + Jabón Artesanal (Consultar Stock)</p>
                     <p class="price">$800</p>
                     <a href="" class="btn w-100">Agregar Artículo</a>
                   </div>
