@@ -21,7 +21,7 @@ $paleta: (
   "cinco": rgb(217, 182, 189),
   "seis": rgb(255, 129, 115),
   "siete": rgb(243, 164, 162),
-  "ocho": rgb(250, 235, 215),
+  "ocho": rgb(252, 215, 203),
   "nueve": white
 );
 
@@ -137,6 +137,9 @@ body {
 #nav1 {
   grid-area: nav;
   height: 17vh;
+  @media (min-width: 1024px) {
+  padding: 25px;
+}
 }
 
 #header {
@@ -159,7 +162,6 @@ body {
 
 #footer {
   grid-area: footer;
-  padding-top: 10px;
 }
 
 @media (min-width: 768px) {

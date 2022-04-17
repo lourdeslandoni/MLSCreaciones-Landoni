@@ -29,7 +29,6 @@
   font-size: 1.5rem;
 }
 
-
 .navbar-toggler-icon {
   img {
     width: 100%;
@@ -39,8 +38,11 @@
 .navbar-brand {
   img {
     width: 60%;
+    @media (min-width: 768px) {
+      width:70%;
+    }
     @media (min-width: 1024px) {
-      width: 70%;
+      width: 80%;
     }
   }
 }
@@ -63,32 +65,26 @@
 //Footer
 
 .footer {
-  background-color: white;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media (min-width: 768px) {
-    @include flex(row, center);
-    justify-content: space-evenly;
-  }
-  div {
-    margin-bottom: 10px;
-  }
+  background-color: map-get($map: $paleta, $key: "nueve");
+  @include flex(row, center);
+  justify-content: space-evenly;
+  padding-top: 4px;
   h3 {
     color: map-get($map: $paleta, $key: "uno");
-    font-size: 1rem;
-    margin-bottom: 2px;
+    font-size: 0.8rem;
+    margin-bottom: 1px;
     @media (min-width: 768px) {
       font-size: 1.2rem;
     }
+    @media (min-width: 1024px) {
+      font-size: 1.4rem;
+    }
   }
 }
-
 .footer__image {
   width: 50px;
   @media (min-width: 768px) {
-    width: 140px;
+    width: 100px;
   }
 }
 .footer__icon {
