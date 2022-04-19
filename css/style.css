@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Josefin+Sans:wght@300&display=swap");
+
+/*Estilo para etiquetas generales*/
+
+* {
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+html {
+  font-size: 85%;
+}
+
+h1,
+h2,
+h3 {
+  color: palevioletred;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+body {
+  background-image: url(../img/background.png);
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+nav img {
+  width: 30%;
+}
+
+footer h3 {
+  color: salmon;
+  font-size: 0.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+figure img {
+  width: 70%;
+}
+/*Estilo para encabezado y navs*/
+
+.encabezado__box {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: rgb(238, 227, 230);
+  padding: 10px 10px;
+}
+
+.bg-nav {
+  background-color: white;
+  padding: 10px;
+}
+
+.bg-nav ul li {
+  margin-right: 20px;
+  background-color: white;
+}
+
+.bg-nav ul li a {
+  font-size: 1rem;
+  color: rgb(243, 164, 162);
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: antiquewhite;
+}
+
+.imgNav {
+  width: 10%;
+  margin-bottom: 4px;
+}
+
+#nav1 :hover {
+  color: salmon;
+}
+
+.nav2 {
+  background-color: rgb(241, 192, 191);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+/*Estilo para index*/
+
+.carousel-inner {
+  size: 40%;
+  padding: 20px;
+}
+.carousel-inner img {
+  width: 80%;
+}
+
+/*Estilo para footer*/
+
+.footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+footer div {
+  margin-bottom: 10px;
+}
+
+.footer__image {
+  width: 70px;
+}
+.footer__icon {
+  width: 20px;
+  margin-left: 6px;
+}
+
+.sobreMi__article {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 20px auto;
+  border: dotted 6px rgb(238, 227, 230);
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.sobreMi__article--fotoMarian {
+  width: 150px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+article h2 {
+  font-size: 2rem;
+  background-color: rgb(217, 182, 189);
+}
+
+#formularioContacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  width: 80%;
+}
+
+.card-body h2 {
+  font-size: 1.5rem;
+}
+.card-body p {
+  font-size: 1.2rem;
+}
+
+img {
+  size: 100px;
+}
+
+.imgContacto {
+  width: 80%;
+}
+
+#sobreMi {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  justify-content: center;
+}
+
+/*Aplicando Grid para estructurar página*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header"
+    "nav"
+    "filtros"
+    "productos"
+    "aside"
+    "footer";
+}
+#nav1 {
+  grid-area: nav;
+  height: 10vh;
+}
+
+#header {
+  grid-area: header;
+  height: 6vh;
+}
+
+#filtros {
+  grid-area: filtros;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#aside {
+  grid-area: aside;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "filtros filtros"
+      "productos productos"
+      "aside aside"
+      "footer footer";
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #nav1 {
+    height: 15vh;
+  }
+
+  .imgNav {
+    width: 4%;
+  }
+
+  .bg-nav {
+    background-color: white;
+  }
+
+  .bg-nav ul li a {
+    font-size: 1rem;
+  }
+
+  .encabezado__box {
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+  }
+
+  .carousel-inner img {
+    width: 80%;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card-body h2 {
+    font-size: 1.5rem;
+  }
+  .card-body p {
+    font-size: 1.5rem;
+  }
+
+  .imgContacto {
+    width: 50%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer__image {
+    width: 140px;
+  }
+  .footer__icon {
+    width: 30px;
+    margin-left: 6px;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "filtros productos aside"
+      "footer footer footer";
+  }
+
+  nav img {
+    width: 70%;
+  }
+
+  #nav1 li a {
+    font-size: 1.5rem;
+  }
+
+  .carousel-inner img {
+    width: 70%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .imgNav {
+    width: 60%;
+  }
+
+  .card-body h2 {
+    font-size: 1.2rem;
+  }
+  .card-body p {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .imgContacto {
+    width: 60%;
+  }
+}
