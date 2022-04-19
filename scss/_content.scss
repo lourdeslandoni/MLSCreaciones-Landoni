@@ -1,66 +1,60 @@
 //Page "Index"
 .carousel-index {
-  size: 20%;
-  padding: 20px;
+  padding: 1.25rem;
   img {
-    width: 80%;
-    margin: auto;
+    width: 100%;
   }
 }
 
 //Page "Diseños Disponibles"
 
-.galeria_disenios{
-  a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-weight: bolder;
-  &:hover {
-    color: map-get($map: $paleta, $key: "seis");
-  }
-}
-h2{
-  padding-top: 10px;
-  margin-bottom: -2px;
-}
-}
-
 .galeria_disenios {
   @include flex(column, center);
   align-items: center;
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    &:hover {
+      color: map-get($map: $paleta, $key: "seis");
+    }
+  }
+  h2 {
+    padding-top: 0.625rem;
+    margin-bottom: -0.125rem;
+  }
 }
 
 .encabezadoCarousel {
   width: 80%;
   font-size: 1.4rem;
   font-weight: bolder;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
   background-color: map-get($map: $paleta, $key: "cinco");
   @media (min-width: 768px) {
     font-size: 1.8rem;
-    width: 78%;
+    width: 67%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-size: 2rem;
-    width: 80%;
+    width: 72%;
   }
 }
 
 .carousel {
   width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .carousel-inner img {
-  width: 260px;
-  height: 110px;
+  width: 16.25rem;
+  height: 6.875rem;
   @media (min-width: 768px) {
-    width: 600px;
-    height: 240px;  
+    width: 37.5rem;
+    height: 15rem;
   }
 }
-
 
 //Page "Productos"
 .nav2 {
@@ -91,40 +85,58 @@ a {
   }
 }
 
-.estampadosNav2{
+.estampadosNav2 {
   @include flex(row, center);
   justify-content: space-evenly;
   align-items: flex-start;
-  label{
+  select {
     font-size: 1.2rem;
   }
-  h3{
+  label {
     font-size: 1.2rem;
-    padding-top: 10px;
   }
-  height: 20vh;
-  div{
-    padding: 4px;
+  h3 {
+    font-size: 1.4rem;
+    padding: 0.625rem 0.625rem;
+    display: flex;
   }
   @media (min-width: 768px) {
     justify-content: space-evenly;
     align-items: flex-start;
-}
+    h3 {
+      font-size: 1.6rem;
+    }
+    select {
+      font-size: 1.6rem;
+      width: 100%;
+    }
+    label {
+      font-size: 1.6rem;
+    }
+  }
   @media (min-width: 1024px) {
     @include flex(column, center);
     justify-content: flex-start;
-    span{
-    padding-top: 6px;
-}
-}
+    padding-top: 2rem;
+    span {
+      padding-top: 0.375rem;
+    }
+    label {
+      font-size: 1.6rem;
+    }
+    div {
+      padding-bottom: 1.5rem;
+    }
+  }
 }
 
-.checkboxDiseños{
+.checkboxDiseños {
+  font-size: 1.4rem;
   @include flex(column, center);
   align-items: flex-start;
   @media (min-width: 1024px) {
     @include flex(column, center);
-}
+  }
 }
 
 #aside {
@@ -137,13 +149,12 @@ a {
     @include flex(column, center);
   }
   figcaption {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 0.375rem;
+    margin-bottom: 0.375rem;
   }
 }
-
 img {
   width: 20%;
   @media (min-width: 768px) {
@@ -162,27 +173,29 @@ img {
   align-items: center;
   width: 90%;
   background-color: map-get($map: $paleta, $key: "ocho");
-  margin: 20px;
   @media (min-width: 768px) {
     height: 100%;
-    margin: 0px;
-}
+    margin: 0;
+  }
   @media (min-width: 1024px) {
-      width: 100%;
+    width: 100%;
   }
 }
 .container-fluid {
-  margin-left: 20px;
+  margin: 0.25rem;
   h3 {
     font-size: 1rem;
     color: map-get($map: $paleta, $key: "seis");
     font-style: italic;
-    margin-top: -6px;
-    margin-bottom: -10px;
+    margin-top: -0.375rem;
+    margin-bottom: -0.625rem;
     @media (min-width: 768px) {
       font-size: 1.2rem;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
+  }
+  article {
+    display: flex;
   }
 }
 
@@ -190,32 +203,37 @@ img {
   @include flex(column, center);
   justify-content: space-around;
   width: 100%;
-  padding: -1px 15px;
-  margin: 0px;
+  padding: -0.063rem 0.938rem;
+  margin: 0;
   h4 {
-    padding-top: 10px;
+    padding-top: 0.625rem;
     font-size: 1.2rem;
     color: map-get($map: $paleta, $key: "seis");
     @media (min-width: 768px) {
       font-size: 1.5rem;
+    }
   }
-}
   p {
     font-size: 1rem;
-    font-weight: bold;
-    margin: 0px;
+    margin: 0;
     line-height: 2rem;
+    b {
+      font-size: 1rem;
+    }
     @media (min-width: 768px) {
       font-size: 1.5rem;
+      b {
+        font-size: 1.5rem;
+      }
     }
     @media (min-width: 1024px) {
-      font-size: 1.3rem;
+      line-height: 2.5rem;
     }
   }
 }
 
 .card-img-top {
-  padding-top: 10px;
+  padding-top: 0.25rem;
   width: 70%;
   @media (min-width: 1024px) {
     width: 100%;
@@ -236,55 +254,73 @@ img {
   width: 80%;
   height: auto;
   margin: 20px auto;
-  border: dotted 6px map-get($map: $paleta, $key: "cinco");
-  padding: 20px 20px;
+  border: dotted 0.375rem map-get($map: $paleta, $key: "cinco");
+  padding: 1.25rem 1.25rem;
   box-sizing: border-box;
-  padding-top: 4px;
+  padding-top: 0.25rem;
   line-height: 1.8rem;
+  b {
+    font-size: 1rem;
+  }
   @media (min-width: 768px) {
     font-size: 1.5rem;
     line-height: 3rem;
+    b {
+      font-size: 1.5rem;
+    }
   }
 }
 
 .sobreMi__article--fotoMarian {
-  width: 150px;
-  padding-bottom: 20px;
+  width: 9.375rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
   @media (min-width: 768px) {
-    width: 300px;
+    width: 18.75rem;
   }
 }
 
 // Page "Faqs&Contacto"
 
-span p{
-    background-color: map-get($map: $paleta, $key: "seis");
-      font-size: 1.4rem;
-      font-weight: bolder;
-      color: map-get($map: $paleta, $key: "nueve");
+span p {
+  background-color: map-get($map: $paleta, $key: "seis");
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: map-get($map: $paleta, $key: "nueve");
   text-align: center;
-  margin: 20px;
-  padding: 10px;
-  @media (min-width: 1024px) {
-    margin: 10px;
+  margin: 1.25rem;
+  padding: 1.625rem;
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
   }
-    }
-
+  @media (min-width: 1024px) {
+    margin: 0.625rem;
+  }
+}
 
 .card-title {
   text-align: center;
   font-weight: bolder;
 }
 
-.section_contacto{
-margin: 20px;
+#preguntasFrecuentes {
+  article {
+    display: flex;
+    padding-bottom: 1.25rem;
+  }
 }
 
-.col-form-label {
-  font-size: 1.2rem;
+.section_contacto {
+  @media (min-width: 768px) {
+    margin: 1.875rem;
+  }
+  @media (min-width: 1024px) {
+    margin: 0.75rem;
+  }
 }
 
 #formularioContacto {
+  padding-top: 0.625rem;
   @include flex(column, center);
   font-size: 1.4rem;
   background-color: map-get($map: $paleta, $key: "cinco");
@@ -302,12 +338,12 @@ article {
   height: 100%;
 }
 
-#imgFormulario{
+#imgFormulario {
   background-color: map-get($map: $paleta, $key: "cinco");
-  padding-top: 6px;
-  padding-bottom: 6px;
-  img{
-padding: 0px;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  img {
+    padding: 0;
   }
 }
 
@@ -317,12 +353,12 @@ padding: 0px;
   h1 {
     font-size: 1.5rem;
     font-weight: bolder;
-    padding: 20px;
+    padding: 1.25rem;
     @media (min-width: 768px) {
       font-size: 2.5rem;
     }
   }
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   @include flex(column, center);
   align-items: center;
   img {
