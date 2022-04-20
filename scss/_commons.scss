@@ -62,7 +62,7 @@ $paleta: (
   padding-left: 0;
   padding-right: 0;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 html {
@@ -149,10 +149,6 @@ body {
 
 #productos {
   grid-area: productos;
-  padding-bottom: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #aside {
