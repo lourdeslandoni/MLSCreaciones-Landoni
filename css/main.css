@@ -485,10 +485,11 @@ img {
     width: 9.375rem;
     padding-bottom: 1.25rem;
     padding-top: 1.25rem;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    width: 90%; }
     @media (min-width: 768px) {
       .sobreMi__article .sobreMi__article--fotoMarian {
-        width: 18.75rem; } }
+        width: 50%; } }
 
 .cuadroAclaracion {
   margin: 0;

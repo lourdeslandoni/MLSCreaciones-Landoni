@@ -298,8 +298,9 @@ img {
     padding-bottom: 1.25rem;
     padding-top: 1.25rem;
     border-radius: 0.5rem;
+    width: 90%;
     @media (min-width: 768px) {
-      width: 18.75rem;
+      width: 50%;
     }
   }
 }
