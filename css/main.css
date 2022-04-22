@@ -10,7 +10,7 @@
     color: black;
     cursor: pointer; }
   .btn-submit a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     font-weight: bolder;
     color: white; }
@@ -24,6 +24,11 @@
     background: red;
     color: black;
     cursor: pointer; }
+  .btn-reset a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white; }
 
 * {
   font-size: 85%;
