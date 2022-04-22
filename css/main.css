@@ -45,13 +45,14 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  padding-top: 0.625rem; }
+  padding-top: 1rem; }
   @media (min-width: 768px) {
     h1 {
       font-size: 2.5rem; } }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.7rem;
+  padding-bottom: 0.625rem; }
   @media (min-width: 768px) {
     h2 {
       font-size: 2rem; } }
@@ -211,13 +212,12 @@ body {
 .carousel-index {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 1.25rem; }
+  text-align: center; }
   .carousel-index img {
     width: 85%;
     border-radius: 1.5rem;
     padding-top: 1rem;
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
     @media (min-width: 768px) {
       .carousel-index img {
         width: 65%; } }
@@ -288,6 +288,15 @@ body {
     #productos h2 a {
       font-size: 1.8rem; } }
 
+#productos h3 {
+  color: #ff8173;
+  font-style: italic;
+  margin-top: -0.375rem; }
+  @media (min-width: 768px) {
+    #productos h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.625rem; } }
+
 #aside {
   background-color: #ffd3ca;
   padding-top: 1rem;
@@ -324,21 +333,6 @@ img {
 .row {
   display: flex;
   justify-content: space-around; }
-
-.catalogoProductos {
-  margin: 0.25rem; }
-  .catalogoProductos h3 {
-    font-size: 1rem;
-    color: #ff8173;
-    font-style: italic;
-    margin-top: -0.375rem;
-    margin-bottom: -0.625rem; }
-    @media (min-width: 768px) {
-      .catalogoProductos h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.625rem; } }
-  .catalogoProductos article {
-    display: flex; }
 
 .card {
   align-items: center;
@@ -403,6 +397,20 @@ img {
   flex-direction: column;
   text-align: center;
   align-items: center; }
+  .galeria_disenios h2 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-bottom: -0.625rem; }
+    @media (min-width: 768px) {
+      .galeria_disenios h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .galeria_disenios h2 {
+        font-size: 2.2rem; } }
   .galeria_disenios a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -415,18 +423,6 @@ img {
     @media (min-width: 1024px) {
       .galeria_disenios a {
         font-size: 2rem; } }
-  .galeria_disenios h2 {
-    font-size: 1.3rem;
-    padding-top: 0.625rem;
-    margin-bottom: -0.125rem; }
-    @media (min-width: 768px) {
-      .galeria_disenios h2 {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-size: 1.8rem; } }
-    @media (min-width: 1024px) {
-      .galeria_disenios h2 {
-        font-size: 2.2rem; } }
   .galeria_disenios .encabezadoCarousel {
     width: 69%;
     font-size: 1.4rem;
@@ -473,6 +469,9 @@ img {
   padding-top: 0.25rem;
   line-height: 1.8rem;
   border-radius: 0.5rem; }
+  @media (min-width: 1024px) {
+    .sobreMi__article {
+      width: 100%; } }
   .sobreMi__article b {
     font-size: 1rem; }
   @media (min-width: 768px) {
@@ -490,6 +489,9 @@ img {
     @media (min-width: 768px) {
       .sobreMi__article .sobreMi__article--fotoMarian {
         width: 50%; } }
+    @media (min-width: 1024px) {
+      .sobreMi__article .sobreMi__article--fotoMarian {
+        width: 55%; } }
 
 .cuadroAclaracion {
   margin: 0;
@@ -562,8 +564,6 @@ img {
   margin-bottom: 1rem; }
   #formularioContacto article {
     justify-content: center; }
-    #formularioContacto article h2 {
-      font-size: 2rem; }
     #formularioContacto article form {
       display: flex;
       flex-direction: column;

@@ -79,14 +79,15 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  padding-top: 0.625rem;
+  padding-top: 1rem;
   @media (min-width: 768px) {
     font-size: 2.5rem;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  padding-bottom: 0.625rem;
   @media (min-width: 768px) {
     font-size: 2rem;
   }
