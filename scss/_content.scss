@@ -4,7 +4,8 @@
     width: 85%;
     border-radius: 1.5rem;
     padding-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+
     @media (min-width: 768px) {
       width: 65%;
     }
@@ -160,7 +161,7 @@ img {
     margin: 0;
     line-height: 2rem;
     b {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     @media (min-width: 768px) {
       font-size: 1.5rem;
@@ -212,7 +213,7 @@ img {
       font-size: 2.2rem;
     }
   }
-   a {
+  a {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bolder;
@@ -226,7 +227,7 @@ img {
       font-size: 2rem;
     }
   }
- 
+
   .encabezadoCarousel {
     width: 69%;
     font-size: 1.4rem;
@@ -298,9 +299,9 @@ img {
     @media (min-width: 768px) {
       width: 50%;
     }
-  @media (min-width: 1024px) {
-    width: 55%;
-  }
+    @media (min-width: 1024px) {
+      width: 55%;
+    }
   }
 }
 

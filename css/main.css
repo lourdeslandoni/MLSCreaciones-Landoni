@@ -181,38 +181,36 @@ body {
     .imgNav {
       width: 60%; } }
 
-.footer {
+#footer {
   background-color: white;
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-evenly;
   padding-top: 0.25rem; }
-  .footer h3 {
+  #footer h3 {
     color: #da7294;
     font-size: 0.9rem;
     margin-bottom: 0.3rem; }
     @media (min-width: 768px) {
-      .footer h3 {
+      #footer h3 {
         font-size: 1.2rem; } }
     @media (min-width: 1024px) {
-      .footer h3 {
+      #footer h3 {
         font-size: 1.4rem; } }
-
-.footer__image {
-  width: 5rem;
-  padding-bottom: 1rem; }
-  @media (min-width: 768px) {
-    .footer__image {
-      width: 8rem; } }
-
-.footer__icon {
-  width: 1.25rem;
-  margin-left: 0.25rem;
-  padding-top: -1.25rem; }
-  @media (min-width: 768px) {
-    .footer__icon {
-      width: 1.875rem; } }
+  #footer .footer__image {
+    width: 5rem;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      #footer .footer__image {
+        width: 7rem; } }
+  #footer a {
+    text-decoration: none; }
+  #footer .footer__icon {
+    width: 2rem; }
+    @media (min-width: 768px) {
+      #footer .footer__icon {
+        width: 2.5rem; } }
 
 .carousel-index {
   display: flex;
@@ -222,7 +220,7 @@ body {
     width: 85%;
     border-radius: 1.5rem;
     padding-top: 1rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 4rem; }
     @media (min-width: 768px) {
       .carousel-index img {
         width: 65%; } }
@@ -370,7 +368,7 @@ img {
     margin: 0;
     line-height: 2rem; }
     .card-body p b {
-      font-size: 1rem; }
+      font-size: 1.3rem; }
     @media (min-width: 768px) {
       .card-body p {
         font-size: 1.5rem; }
